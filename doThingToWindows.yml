@@ -1,6 +1,7 @@
 - name : Update Windows
   hosts: all
   
+  tasks:
   - name: install all critical and security updates
     win_updates:
       category_names:
