@@ -1,0 +1,8 @@
+- name : Install Putty
+  hosts: all
+
+  tasks:
+  - name: Ensure Putty is installed via Chocolatey
+    win_chocolatey:
+      name: putty.install
+      state: present

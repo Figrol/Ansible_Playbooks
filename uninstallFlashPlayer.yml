@@ -1,0 +1,8 @@
+- name : Uninstall Flash Player plugin
+  hosts: all
+
+  tasks:
+  - name: Ensure Flash Player Plugin is uninstalled via Chocolatey
+    win_chocolatey:
+      name: flashplayerplugin
+      state: absent

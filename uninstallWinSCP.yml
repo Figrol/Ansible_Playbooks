@@ -1,0 +1,9 @@
+- name : Uninstall WinSCP
+  hosts: all
+
+  tasks:
+  - name: CD to WIN SCP file location and run uninstaller
+    win_package:
+      path: C:\Program Files (x86)\WinSCP\unins000.exe
+      state: absent
+      product_id: auto

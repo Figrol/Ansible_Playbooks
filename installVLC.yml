@@ -1,0 +1,8 @@
+- name : Install VLC Player
+  hosts: all
+
+  tasks:
+  - name: Ensure VLC Player is installed via Chocolatey
+    win_chocolatey:
+      name: vlc
+      state: present

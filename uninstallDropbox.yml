@@ -1,0 +1,8 @@
+- name : Uninstall Dropbox
+  hosts: all
+
+  tasks:
+  - name: Ensure Dropbox is uninstalled via Chocolatey
+    win_chocolatey:
+      name: dropbox
+      state: absent

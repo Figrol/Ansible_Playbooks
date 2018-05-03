@@ -1,0 +1,8 @@
+- name : Install Dropbox
+  hosts: all
+
+  tasks:
+  - name: Ensure Dropbox is installed via Chocolatey
+    win_chocolatey:
+      name: dropbox
+      state: present

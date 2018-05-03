@@ -1,0 +1,8 @@
+- name : Install Flash Player Plugin
+  hosts: all
+
+  tasks:
+  - name: Ensure Flash Player Plugin is installed via Chocolatey
+    win_chocolatey:
+      name: flashplayerplugin
+      state: present

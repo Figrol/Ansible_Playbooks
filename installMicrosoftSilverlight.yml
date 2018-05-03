@@ -1,0 +1,8 @@
+- name : Install Microsoft Silverlight
+  hosts: all
+
+  tasks:
+  - name: Ensure Microsoft Silverlight is installed via Chocolatey
+    win_chocolatey:
+      name: silverlight
+      state: present

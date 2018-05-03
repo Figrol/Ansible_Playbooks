@@ -1,0 +1,77 @@
+- name: Uninstal all base software on a base admin level system
+  hosts: all
+
+  tasks:
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+  
+  - name: Ensure Flash Player Plugin is uninstalled via Chocolatey
+    win_chocolatey:
+      name: flashplayerplugin
+      state: absent
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure Google Chrome is uninstalled via Chocolatey
+    win_chocolatey:
+      name: googlechrome
+      state: absent
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure Adobe Reader is uninstalled via Chocolatey
+    win_chocolatey:
+      name: adobereader
+      state: absent
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure VLC Player is uninstalled via Chocolatey
+    win_chocolatey:
+      name: vlc
+      state: absent
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure Java SE is uninstalled via Chocolatey
+    win_chocolatey:
+      name: jdk8
+      state: absent
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure Microsoft Silverlight is uninstalled via Chocolatey
+    win_chocolatey:
+      name: silverlight
+      state: absent
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure Malwarebytes is uninstalled via Chocolatey
+    win_chocolatey:
+      name: malwarebytes
+      state: absent
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure Office365 is uninstalled via Chocolatey
+    win_chocolatey:
+      name: office365proplus
+      state: absent
+

@@ -1,0 +1,8 @@
+- name : Uninstall Java SE
+  hosts: all
+
+  tasks:
+  - name: Ensure Java SE is uninstalled via Chocolatey
+    win_chocolatey:
+      name: jdk8
+      state: absent

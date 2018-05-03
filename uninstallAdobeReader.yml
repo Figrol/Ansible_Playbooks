@@ -1,0 +1,8 @@
+- name : Uninstall Adobe Reader
+  hosts: all
+
+  tasks:
+  - name: Ensure Adobe Reader is uninstalled via Chocolatey
+    win_chocolatey:
+      name: adobereader
+      state: absent

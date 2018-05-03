@@ -1,0 +1,8 @@
+- name : Install WinRAR
+  hosts: all
+
+  tasks:
+  - name: Ensure WinRAR is installed via Chocolatey
+    win_chocolatey:
+      name: winrar
+      state: present

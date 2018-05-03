@@ -1,0 +1,8 @@
+- name : Install Virtualbox
+  hosts: all
+
+  tasks:
+  - name: Ensure Virtualbox is installed via Chocolatey
+    win_chocolatey:
+      name: virtualbox
+      state: present

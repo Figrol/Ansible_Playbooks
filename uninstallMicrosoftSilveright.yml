@@ -1,0 +1,8 @@
+- name : Uninstall Microsoft Silverlight
+  hosts: all
+
+  tasks:
+  - name: Ensure Microsoft Silverlight is uninstalled via Chocolatey
+    win_chocolatey:
+      name: silverlight
+      state: absent

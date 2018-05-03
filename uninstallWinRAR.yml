@@ -1,0 +1,8 @@
+- name : Uninstall WinRAR
+  hosts: all
+
+  tasks:
+  - name: Ensure WinRAR is uninstalled via Chocolatey
+    win_chocolatey:
+      name: winrar
+      state: absent

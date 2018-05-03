@@ -1,0 +1,8 @@
+- name : Install Office365
+  hosts: all
+
+  tasks:
+  - name: Ensure Office365 is installed via Chocolatey
+    win_chocolatey:
+      name: office365proplus
+      state: present

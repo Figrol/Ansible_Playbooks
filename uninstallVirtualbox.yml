@@ -1,0 +1,8 @@
+- name : Uninstall Virtualbox
+  hosts: all
+
+  tasks:
+  - name: Ensure Virtualbox is uninstalled via Chocolatey
+    win_chocolatey:
+      name: virtualbox
+      state: absent

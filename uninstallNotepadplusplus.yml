@@ -1,0 +1,8 @@
+- name : Uninstall Notepad++
+  hosts: all
+
+  tasks:
+  - name: Ensure Notepad++ is uninstalled via Chocolatey
+    win_chocolatey:
+      name: notepadplusplus.install
+      state: absent

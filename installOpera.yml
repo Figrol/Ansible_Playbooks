@@ -1,0 +1,8 @@
+- name : Install Opera
+  hosts: all
+
+  tasks:
+  - name: Ensure Opera is installed via Chocolatey
+    win_chocolatey:
+      name: opera
+      state: present

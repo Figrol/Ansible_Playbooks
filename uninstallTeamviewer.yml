@@ -1,0 +1,8 @@
+- name : Uninstall Teamviewer
+  hosts: all
+
+  tasks:
+  - name: Ensure Teamviewer is uninstalled via Chocolatey
+    win_chocolatey:
+      name: teamviewer
+      state: absent

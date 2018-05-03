@@ -1,0 +1,8 @@
+- name : Install Skype
+  hosts: all
+
+  tasks:
+  - name: Ensure Skype is installed via Chocolatey
+    win_chocolatey:
+      name: skype
+      state: present

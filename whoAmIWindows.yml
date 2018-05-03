@@ -1,0 +1,6 @@
+- name: Ping 
+  hosts: all 
+
+  tasks:
+  - name: get whoami information
+    win_whoami:

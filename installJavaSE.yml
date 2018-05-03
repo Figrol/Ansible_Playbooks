@@ -1,0 +1,8 @@
+- name : Install Java SE
+  hosts: all
+
+  tasks:
+  - name: Ensure Java SE is installed via Chocolatey
+    win_chocolatey:
+      name: jdk8
+      state: present

@@ -1,0 +1,77 @@
+- name: Install a base admin level system
+  hosts: all
+
+  tasks:
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+  
+  - name: Ensure Flash Player Plugin is installed via Chocolatey
+    win_chocolatey:
+      name: flashplayerplugin
+      state: present
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure Google Chrome is installed via Chocolatey
+    win_chocolatey:
+      name: googlechrome
+      state: present
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure Adobe Reader is installed via Chocolatey
+    win_chocolatey:
+      name: adobereader
+      state: present
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure VLC Player is installed via Chocolatey
+    win_chocolatey:
+      name: vlc
+      state: present
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure Java SE is installed via Chocolatey
+    win_chocolatey:
+      name: jdk8
+      state: present
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure Microsoft Silverlight is installed via Chocolatey
+    win_chocolatey:
+      name: silverlight
+      state: present
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure Malwarebytes is installed via Chocolatey
+    win_chocolatey:
+      name: malwarebytes
+      state: present
+
+  - name: this will not be counted as a failure
+    command: /bin/false
+    ignore_errors: yes
+
+  - name: Ensure Office365 is installed via Chocolatey
+    win_chocolatey:
+      name: office365proplus
+      state: present
+

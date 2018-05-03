@@ -1,0 +1,8 @@
+- name : Install Firefox
+  hosts: all
+
+  tasks:
+  - name: Ensure Mozilla Firefox is installed via Chocolatey
+    win_chocolatey:
+      name: firefox
+      state: present

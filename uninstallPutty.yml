@@ -1,0 +1,8 @@
+- name : Uninstall Putty
+  hosts: all
+
+  tasks:
+  - name: Ensure Putty is uninstalled via Chocolatey
+    win_chocolatey:
+      name: putty.install
+      state: absent

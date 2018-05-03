@@ -1,0 +1,8 @@
+- name : Uninstall VLC Player
+  hosts: all
+
+  tasks:
+  - name: Ensure VLC Player is uninstalled via Chocolatey
+    win_chocolatey:
+      name: vlc
+      state: absent

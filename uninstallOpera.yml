@@ -1,0 +1,8 @@
+- name : Uninstall Opera
+  hosts: all
+
+  tasks:
+  - name: Ensure Opera is uninstalled via Chocolatey
+    win_chocolatey:
+      name: opera
+      state: absent

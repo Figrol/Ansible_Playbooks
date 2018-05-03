@@ -1,0 +1,8 @@
+- name : Uninstall Skype
+  hosts: all
+
+  tasks:
+  - name: Ensure Skype is uninstalled via Chocolatey
+    win_chocolatey:
+      name: skype
+      state: absent

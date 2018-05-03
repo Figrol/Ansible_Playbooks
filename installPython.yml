@@ -1,0 +1,8 @@
+- name : Install Python
+  hosts: all
+
+  tasks:
+  - name: Ensure Python is installed via Chocolatey
+    win_chocolatey:
+      name: python2
+      state: present

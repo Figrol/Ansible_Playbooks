@@ -1,0 +1,8 @@
+- name : Install WinSCP
+  hosts: all
+
+  tasks:
+  - name: Ensure WinSCP is installed via Chocolatey
+    win_chocolatey:
+      name: winscp
+      state: present
