@@ -1,4 +1,5 @@
    - hosts: all
+     become: yes
      tasks:
        - name: Run the equivalent of "Apt-get update" as a seperate step
          apt:
