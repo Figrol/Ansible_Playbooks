@@ -1,0 +1,11 @@
+- hosts: all
+  tasks:
+    - name: apply critical and security windows updates 
+      win_updates:
+        category_names: 
+          - SecurityUpdates
+          - CriticalUpdates
+      register: wuout
+    - name: reboot if required
+      win_reboot:
+      when: wuout.reboot_required
