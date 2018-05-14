@@ -2,7 +2,8 @@
    - hosts: all
      become: yes
      tasks:
+     
         - name: upgrade all packages
           yum:
-          name: '*'
+            name: '*'
             state: latest
