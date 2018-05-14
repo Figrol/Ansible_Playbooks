@@ -1,0 +1,11 @@
+
+   - hosts: all
+     become: yes
+     tasks:
+       - name: Run the equivalent of "yum update" as a seperate step
+         yum:
+           update_cache: yes
+
+       - name: Upgrade all packages to the latest version
+         yum: 
+           upgrade: full
