@@ -6,4 +6,4 @@
         - name: install the latest version of Apache
           apt:
             name: httpd
-            state: latest
+            state: present
