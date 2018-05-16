@@ -1,0 +1,7 @@
+
+   - hosts: all
+     become: yes
+     tasks:
+     
+        - name: install the latest version of Apache
+          apt: name=httpd state=absent
