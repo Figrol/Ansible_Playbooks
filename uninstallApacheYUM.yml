@@ -2,7 +2,7 @@
      become: yes
      tasks:
      
-        - name: install the latest version of Apache
+        - name: uninstall the latest version of Apache
           yum:
             name: httpd
-            state: latest
+            state: absent
