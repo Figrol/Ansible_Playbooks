@@ -1,0 +1,6 @@
+   - hosts: all
+     become: yes
+     tasks:
+     
+        - name: install the latest version of Apache
+          apt: name=nginx state=absent
