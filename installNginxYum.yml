@@ -2,7 +2,7 @@
      become: yes
      tasks:
      
-        - name: install the latest version of Apache
+        - name: install the latest version of Nginx
           yum:
-            name: httpd
+            name: nginx
             state: latest
