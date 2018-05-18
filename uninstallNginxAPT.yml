@@ -2,5 +2,5 @@
      become: yes
      tasks:
      
-        - name: install the latest version of Apache
+        - name: install the latest version of Nginx
           apt: name=nginx state=absent
