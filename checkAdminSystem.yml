@@ -12,6 +12,11 @@
     win_chocolatey:
       name: vlc
       state: present
+      
+  - name: Ensure Mozilla Firefox is installed via Chocolatey
+    win_chocolatey:
+      name: firefox
+      state: present
 
   - name: Ensure Office365 is installed via Chocolatey
     win_chocolatey:
