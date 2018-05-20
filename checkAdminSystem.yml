@@ -2,45 +2,15 @@
   hosts: all
 
   tasks:
-  
-  - name: Ensure Flash Player Plugin is installed via Chocolatey
-    win_chocolatey:
-      name: flashplayerplugin
-      state: present
-
+ 
   - name: Ensure Google Chrome is installed via Chocolatey
     win_chocolatey:
       name: googlechrome
       state: present
 
-  - name: Ensure Adobe Reader is installed via Chocolatey
-    win_chocolatey:
-      name: adobereader
-      state: present
-
   - name: Ensure VLC Player is installed via Chocolatey
     win_chocolatey:
       name: vlc
-      state: present
-
-  - name: Ensure Skype is installed via Chocolatey
-    win_chocolatey:
-      name: skype
-      state: present
-
-  - name: Ensure Java SE is installed via Chocolatey
-    win_chocolatey:
-      name: jdk8
-      state: present
-
-  - name: Ensure Microsoft Silverlight is installed via Chocolatey
-    win_chocolatey:
-      name: silverlight
-      state: present
-
-  - name: Ensure Malwarebytes is installed via Chocolatey
-    win_chocolatey:
-      name: malwarebytes
       state: present
 
   - name: Ensure Office365 is installed via Chocolatey
